@@ -1,4 +1,4 @@
 # flexbox-templates
 Flexbox template designs <br>
-    mainpage - Holy Grail template with header <br>
+    <ul><li>mainpage - Holy Grail template with header</li></ul>
 Once complete these will be refactored into Go templates
