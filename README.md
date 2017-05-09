@@ -1,2 +1,2 @@
-# flex-box-templates
+# flexbox-templates
 Flexbox templates
