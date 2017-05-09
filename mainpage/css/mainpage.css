@@ -1,21 +1,33 @@
+/* set the mainpage to be a column as mobile first*/
 .mainpage {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
 
+/* mainpage-body is the central column*/
 .mainpage-body {
   display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   flex: 1;
 }
 
 .mainpage-content {
   flex: 1;
+  padding: 0.5em;
 }
 
-.mainpage-nav, .mainpage-ads {
+.mainpage-nav {
   /* 12em is the width of the columns */
-  flex: 0 0 12em;
+  display: flex;
+  flex-direction: row;
+  /*flex: 1 1 auto;*/
+}
+
+.mainpage-ads {
+  /* 12em is the width of the columns */
+  flex: 0 0 2em;
 }
 
 .mainpage-nav {
@@ -23,8 +35,7 @@
   order: -1;
 }
 
-
-.siteHeader {
+.mainpage-header {
   /**
    * Lay out the children of this container with
    * flexbox, which is horizontal by default.
@@ -42,7 +53,7 @@
   background-color: #56727C;
 }
 
-  .siteHeader__section {
+  .mainpage-header-section {
     /**
      * Lay out the children of this container with
      * flexbox.
@@ -57,28 +68,72 @@
     align-items: center;
   }
 
-    .siteHeader__item {
+    .mainpage-header-item {
       padding: 5px 15px;
       font-size: 12px;
     }
 
-    .siteHeader__item + .siteHeader__item {
+    .mainpage-header-item + .mainpage-header-item {
       margin-left: 5px;
     }
 
-    .siteHeader__item.is-site-header-item-selected {
+    /*.mainpage-header-item.is-site-header-item-selected {
       color: #FFFFFF;
       background-color: #415F69;
       border-radius: 4px;
-    }
+    }*/
 
-    .siteHeaderLogo {
+    .mainpageLogo {
       font-size: 20px;
       line-height: 0;
       color: white;
     }
 
-    .siteHeaderButton {
+    .mainpageButton {
       cursor: pointer;
       color: #D9E9EF;
+      font-size: 1em;
     }
+
+    .mainpageButton:hover {
+      color: #FFFFFF;
+      background-color: #415F69;
+      border-radius: 4px;
+    }
+
+    .mainpage-footer {
+      padding: 1em;
+      color: white;
+      background-color: #56727C;
+    }
+
+    html, body, ul, li, a {
+        padding: 0;
+        border: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .nav-ul {
+        display: flex;
+        width:100%;
+        order: -1;
+        /*flex-flow: row nowrap;*/
+        /*justify-content: flex-end;*/
+        /*justify-content: center;*/
+        /*justify-content: stretch;*/
+        /*width: 100vw;*/
+
+    }
+
+    .nav-li {
+        display: block;
+        /*padding: 1em;*/
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: max-content;
+    }
+
+    .nav-a {
+        display: block;
+      }
