@@ -1,21 +1,24 @@
 /* set the mainpage to be a column as mobile first*/
+
 .mainpage {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  min-height: 100vh;
 }
 
+
 /* mainpage-body is the central column*/
+
 .mainpage-body {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  min-height: 100vh;
   flex: 1;
 }
 
 .mainpage-content {
+  padding: .5em;
   flex: 1;
-  padding: 0.5em;
 }
 
 .mainpage-nav {
@@ -25,9 +28,10 @@
   /*flex: 1 1 auto;*/
 }
 
-.mainpage-ads {
+.mainpage-aside {
   /* 12em is the width of the columns */
   flex: 0 0 2em;
+  padding-left: 0.5em;
 }
 
 .mainpage-nav {
@@ -41,99 +45,270 @@
    * flexbox, which is horizontal by default.
    */
   display: flex;
-
+  padding: 10px;
+  background-color: #56727c;
   /**
    * Make the container put as much space as possible
    * between its children, with the children at either
    * end laying flush against the container's edges.
    */
   justify-content: space-between;
-
-  padding: 10px;
-  background-color: #56727C;
 }
 
-  .mainpage-header-section {
-    /**
+.mainpage-header-section {
+  /**
      * Lay out the children of this container with
      * flexbox.
      */
-    display: flex;
-
-    /**
+  display: flex;
+  /**
      * Align the children in the center, along
      * the main axis. By default the children will
      * align along their top edges.
      */
-    align-items: center;
-  }
+  align-items: center;
+}
 
-    .mainpage-header-item {
-      padding: 5px 15px;
-      font-size: 12px;
-    }
+.mainpage-header-item {
+  font-size: 12px;
+  padding: 5px 15px;
+}
 
-    .mainpage-header-item + .mainpage-header-item {
-      margin-left: 5px;
-    }
+.mainpage-header-item + .mainpage-header-item {
+  margin-left: 5px;
+}
 
-    /*.mainpage-header-item.is-site-header-item-selected {
+
+/*.mainpage-header-item.is-site-header-item-selected {
       color: #FFFFFF;
       background-color: #415F69;
       border-radius: 4px;
     }*/
 
-    .mainpageLogo {
-      font-size: 20px;
-      line-height: 0;
-      color: white;
-    }
+.mainpageLogo {
+  font-size: 20px;
+  line-height: 0;
+  color: white;
+}
 
-    .mainpageButton {
-      cursor: pointer;
-      color: #D9E9EF;
-      font-size: 1em;
-    }
+.mainpageButton {
+  font-size: 1em;
+  cursor: pointer;
+  color: #d9e9ef;
+}
 
-    .mainpageButton:hover {
+.mainpageButton:hover {
+  color: #fff;
+  border-radius: 4px;
+  background-color: #415f69;
+}
+
+.mainpage-footer {
+  padding: 1em;
+  color: white;
+  background-color: #56727c;
+}
+
+html, body, ul, li, a {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.nav-ul {
+  display: flex;
+  width: 100%;
+  order: -1;
+  /*flex-flow: row nowrap;*/
+  /*justify-content: flex-end;*/
+  /*justify-content: center;*/
+  /*justify-content: stretch;*/
+  /*width: 100vw;*/
+}
+
+.nav-li {
+  display: block;
+  /*padding: 1em;*/
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: max-content;
+}
+
+.nav-a {
+  display: block;
+}/* set the mainpage to be a column as mobile first*/
+
+.mainpage
+{
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+
+/* mainpage-body is the central column*/
+
+.mainpage-body
+{
+    display: flex;
+    flex-direction: column;
+
+    /*min-height: 100vh;*/
+
+    flex: 1;
+}
+
+.mainpage-content
+{
+    padding: .5em;
+
+    flex: 0;
+
+}
+
+.mainpage-nav
+{
+    /* 12em is the width of the columns */
+    display: flex;
+    flex-direction: row;
+    /*flex: 1 1 auto;*/
+}
+
+.mainpage-aside
+{
+    /* 12em is the width of the columns */
+    flex: 0 0 2em;
+}
+
+.mainpage-nav
+{
+    /* put the nav on the left */
+    order: -1;
+}
+
+.mainpage-header
+{
+    /**
+   * Lay out the children of this container with
+   * flexbox, which is horizontal by default.
+   */
+    display: flex;
+
+    padding: 10px;
+
+    background-color: #56727c;
+    /**
+   * Make the container put as much space as possible
+   * between its children, with the children at either
+   * end laying flush against the container's edges.
+   */
+
+    justify-content: space-between;
+}
+
+.mainpage-header-section
+{
+    /**
+     * Lay out the children of this container with
+     * flexbox.
+     */
+    display: flex;
+    /**
+     * Align the children in the center, along
+     * the main axis. By default the children will
+     * align along their top edges.
+     */
+
+    align-items: center;
+}
+
+.mainpage-header-item
+{
+    font-size: 12px;
+
+    padding: 5px 15px;
+}
+
+.mainpage-header-item + .mainpage-header-item
+{
+    margin-left: 5px;
+}
+
+
+/*.mainpage-header-item.is-site-header-item-selected {
       color: #FFFFFF;
       background-color: #415F69;
       border-radius: 4px;
-    }
+    }*/
 
-    .mainpage-footer {
-      padding: 1em;
-      color: white;
-      background-color: #56727C;
-    }
+.mainpageLogo
+{
+    font-size: 20px;
+    line-height: 0;
 
-    html, body, ul, li, a {
-        padding: 0;
-        border: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
+    color: white;
+}
 
-    .nav-ul {
-        display: flex;
-        width:100%;
-        order: -1;
-        /*flex-flow: row nowrap;*/
-        /*justify-content: flex-end;*/
-        /*justify-content: center;*/
-        /*justify-content: stretch;*/
-        /*width: 100vw;*/
+.mainpageButton
+{
+    font-size: 1em;
 
-    }
+    cursor: pointer;
 
-    .nav-li {
-        display: block;
-        /*padding: 1em;*/
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: max-content;
-    }
+    color: #d9e9ef;
+}
 
-    .nav-a {
-        display: block;
-      }
+.mainpageButton:hover
+{
+    color: #fff;
+    border-radius: 4px;
+    background-color: #415f69;
+}
+
+.mainpage-footer
+{
+    padding: 1em;
+
+    color: white;
+    background-color: #56727c;
+}
+
+html, body, ul, li, a
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+}
+
+.nav-ul
+{
+    display: flex;
+
+    width: 100%;
+
+    order: -1;
+    /*flex-flow: row nowrap;*/
+    /*justify-content: flex-end;*/
+    /*justify-content: center;*/
+    /*justify-content: stretch;*/
+    /*width: 100vw;*/
+}
+
+.nav-li
+{
+    display: block;
+    /*padding: 1em;*/
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: max-content;
+}
+
+.nav-a
+{
+    display: block;
+}
