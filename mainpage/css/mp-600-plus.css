@@ -21,16 +21,13 @@
   display: block;
   width: 100%;
   padding: 1em;
-  /*flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 0;*/
 }
 
 .nav-li {
   display: block;
   flex-grow: 0;
   flex-shrink: 0;
-  /*Check use of min content*/
+  /*Sets the size of the item to be at it minimium contents
+  before any manipulation is performed*/
   flex-basis: min-content;
-  /*padding: 1em;*/
 }

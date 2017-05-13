@@ -1,3 +1,7 @@
+* {
+    /*border: 1px solid hotpink !important;*/
+}
+
 .nav-ul {
     list-style: none;
     background:#56727C; /*deepskyblue;*/
@@ -16,15 +20,6 @@
 .nav-a:hover {
     color: white;
     background: #415F69;/*royalblue;*/
-}
-
-/*
-NOTE: in the video this was a:last-child
-it should be
-*/
-li:last-child {
-    border-bottom: none;
-    // background-color: red;
 }
 
 h1, h2, h3, h4, h5, h6 {
